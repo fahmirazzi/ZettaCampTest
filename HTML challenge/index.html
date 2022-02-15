@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ec12208cc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- javascript -->
+    <script src="index.js" defer></script>
+    <title>Coding Challenge</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__header">
+        <div class="card__header__avatar">
+          <img
+            src="images/person1.jpg"
+            alt="profile picture"
+            class="avatar_header"
+          />
+        </div>
+
+        <div class="card__header__info">
+          <p>
+            <span class="profile-name">Garry Newman </span>posted on your
+            timeline
+          </p>
+          <p>32 minutes ago</p>
+        </div>
+
+        <div class="card__header__icon">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      <div class="card__content">
+        <p>What da Dog doin ???</p>
+        <img src="images/doggo.jpg" alt="" class="card__img" />
+        <div class="card__content__actions">
+          <div class="like_button">
+            <i class="fa-solid fa-heart like-icon"></i>
+            <span>Like (5)</span>
+          </div>
+          <div class="share_button">
+            <i class="fa-solid fa-share-nodes share-icon"></i>
+            <span>Share (21)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__comment">
+        <div class="card__comment__label">
+          <p>1 comments</p>
+          <i class="fa-solid fa-angle-up fold-button"></i>
+        </div>
+        <div class="card__comment__profile">
+          <div class="card__comment__profile__avatar">
+            <img src="images/person2.jpg" alt="" class="avatar_comment" />
+          </div>
+          <div class="card__comment__profile__info">
+            <p>Alice Freeman <span>June 10. 2018</span></p>
+            <div class="card__comment__profile__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                enim optio id, adipisci vel, alias neque ad officia, maiores
+                fuga illum harum laboriosam iusto? Atque aliquam repellendus in.
+                Eaque, nesciunt?
+              </p>
+            </div>
+          </div>
+          <div class="card__comment__actions">
+            <p>Reply</p>
+            <!-- <i class="fa-solid fa-reply"></i> -->
+            <i class="fa-solid fa-flag"></i>
+          </div>
+        </div>
+        <div class="card__comment__reply">
+            <div class="card__comment__profile">
+                <div class="card__comment__profile__avatar">
+                  <img src="images/anonymous.png" alt="" class="avatar_comment" />
+            </div>
+            <div class="card__comment__input">
+                <textarea name="comment" id="input_comment" cols="40" rows="5" placeholder="Add a Comment"></textarea>
+            </div>
+            <div class="card__comment__button">
+                <button>Post Comment</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-blue: #44b5eb;
+  --clr-blue-sec: #039be5;
+  --clr-black: #232323;
+  --clr-grey: rgba(78, 78, 78, 0.644);
+  --shadow: 0px 0px 5px 1px rgba(68, 68, 68, 0.452);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-black);
+  /* background-color: var(--clr-grey); */
+}
+
+/* ------------------------------------------------------------------------ */
+
+.card {
+  min-width: 500px;
+  width: 700px;
+  max-width: 900px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem 1rem;
+  border: none;
+}
+
+.card__header {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.card__header__avatar img {
+  width: 2.8rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.card__header__info {
+  color: var(--clr-black);
+}
+
+.card__header__info p span {
+  color: var(--clr-blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card__header__info p:first-child + p {
+  color: var(--clr-grey);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.card__header__icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.card__header__icon i {
+  color: var(--clr-black);
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.card__content {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.card__content p {
+  margin: 0.5rem 0;
+}
+
+.card__img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.card__content__actions {
+  display: flex;
+  gap: 2rem;
+  margin: 0.5rem 0;
+}
+
+.like_button,
+.share_button {
+  cursor: pointer;
+}
+
+.like-icon,
+.share-icon {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 0.3rem;
+  transition: color 150ms ease-in-out;
+}
+
+.like-icon:hover,
+.share-icon:hover {
+  transform: scale(1.2);
+  color: rgb(221, 34, 34);
+}
+
+.share-icon:hover {
+  color: rgb(34, 221, 59);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.card__comment__label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0 0 0;
+  cursor: pointer;
+}
+
+.card__comment__profile {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.fold {
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.fold-button{
+    transition: 200ms;
+}
+.fold-button-rotate{
+    transform: rotate(180deg);
+}
+
+.card__comment__profile__avatar {
+  justify-self: center;
+}
+.card__comment__profile__avatar img {
+  width: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card__comment__profile__info > p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.card__comment__profile__info p span {
+  color: var(--clr-grey);
+  font-size: 0.9rem;
+}
+
+.card__comment__actions {
+  margin-top: 0.5rem;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__comment__actions p {
+  color: var(--clr-blue);
+  cursor: pointer;
+}
+
+.card__comment__actions p:hover {
+  color: var(--clr-blue-sec);
+}
+
+.card__comment__actions i {
+  cursor: pointer;
+}
+
+.card__comment__actions i:hover {
+  color: var(--clr-blue);
+}
+
+#input_comment {
+  border-color: rgb(211, 211, 211);
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+}
+
+#input_comment:focus {
+  outline-style: dotted;
+  outline-color: var(--clr-blue);
+}
+
+.card__comment__button {
+  grid-column: 2;
+}
+
+.card__comment__button button {
+  padding: 0.5rem;
+  background-color: var(--clr-blue-sec);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
